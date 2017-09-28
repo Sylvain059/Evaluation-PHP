@@ -1,7 +1,25 @@
+html, body{
+	font-family: 'Noto Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
 .logo{
 	width: 100px;
 }
 
-li{
-	margin-right: 0;
+h1{
+	color: #fff;
+}
+
+h1:hover{
+	text-decoration: none;
+}
+
+footer{
+	color: #fff;
+	height: 30px;
+}
+
+footer p{
+	text-align: center;
 }
