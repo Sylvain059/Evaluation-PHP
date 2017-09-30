@@ -5,10 +5,35 @@
 
 <body>
     <?php include 'header.php';?>
+    <?php $reponse = $bdd->query('SELECT * FROM projects ORDER BY id DESC LIMIT 0, 15'); ?>
 
-    <div class="container-fluid">
+    <main class="container">
+        <h2>My Projects</h2>
 
-    </div>
+        <article class="row project">
+            <?php while ($donnees = $reponse->fetch()) { ?>
+            <div class="card project" style="width: 20rem;">
+                <div class="card-block">
+
+                    <h3 class="card-title">
+                        <?php echo $donnees['name_project'] ?>
+                    </h3>
+                    <p class="card-text">
+                        <?php echo $donnees['descriptions'] ?>
+                    </p>
+                    <p class="card-text">
+                        <?php echo $donnees['deadline'] ?>
+                    </p>
+                    <a href="#" class="btn btn-primary button">See More</a>
+                    <a href="#" class="btn btn-danger button">Delete Project</a>
+
+
+                </div>
+            </div>
+            <?php } ?>
+            <a href="#" class="btn btn-success">Add Project</a>
+        </article>
+    </main>
 
     <?php include 'footer.php';?>
     <?php include 'script.php';?>
