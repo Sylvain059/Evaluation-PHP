@@ -1,27 +1,17 @@
+<?php include'../models/connection_bdd.php';?>
 <!DOCTYPE html>
-<html>
-	<?php include 'head.php'; ?>
-	<body>
-		<?php include 'header.php'; ?>
+<html lang="fr">
+<?php include 'head.php';?>
 
-2
-2
-2
-22
+<body>
+    <?php include 'header.php';?>
 
-2
-2
-2
-2
-2
-2
-2
-2
-2
-2
+    <div class="container-fluid">
 
+    </div>
 
-		<?php include 'footer.php'; ?>
-		<?php include 'script.php'; ?>
-	</body>
+    <?php include 'footer.php';?>
+    <?php include 'script.php';?>
+</body>
+
 </html>
