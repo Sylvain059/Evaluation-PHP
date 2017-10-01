@@ -34,6 +34,16 @@ main {
     margin: auto;
 }
 
+table {
+    margin: auto;
+    text-align: left;
+}
+
+tr,
+td {
+    padding: 10px;
+}
+
 footer {
     background-color: #000;
     color: #fff;
