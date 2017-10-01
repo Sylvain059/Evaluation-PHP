@@ -1,5 +1,6 @@
 html,
 body {
+    background-color: gainsboro;
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,6 +10,11 @@ body {
 header {
     background-color: #000;
     color: #fff;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
 }
 
 main {
@@ -22,6 +28,10 @@ main {
 
 .button {
     margin-bottom: 20px;
+}
+
+.add-project {
+    margin: auto;
 }
 
 footer {
