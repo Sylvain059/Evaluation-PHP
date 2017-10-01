@@ -29,8 +29,11 @@
 
                 </div>
             </div>
-            <?php } ?>
-            <a href="#" class="btn btn-success add-project">Add Project</a>
+            <?php }
+            
+            $reponse->closeCursor(); 
+            ?>
+            <a href="add_project.php" class="btn btn-success add-project">Add Project</a>
         </article>
     </main>
 
