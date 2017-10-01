@@ -5,7 +5,7 @@
 
 <body>
     <?php include 'header.php';?>
-    <?php $reponse = $bdd->query('SELECT * FROM projects ORDER BY id DESC LIMIT 0, 15'); ?>
+    <?php include '../models/db_card.php';?>
 
     <main class="container">
         <h2>My Projects</h2>
@@ -27,11 +27,10 @@
                     <a href="#" class="btn btn-primary button">See More</a>
                     <a href="#" class="btn btn-danger button">Delete Project</a>
 
-
                 </div>
             </div>
             <?php } ?>
-            <a href="#" class="btn btn-success">Add Project</a>
+            <a href="#" class="btn btn-success add-project">Add Project</a>
         </article>
     </main>
 
