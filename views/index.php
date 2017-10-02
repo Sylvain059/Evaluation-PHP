@@ -1,9 +1,12 @@
+<!-- ADD DATABASE CONNECT -->
 <?php include'../models/connection_bdd.php';?>
 <!DOCTYPE html>
 <html lang="fr">
+<!-- ADD HEAD -->
 <?php include 'head.php';?>
 
 <body>
+    <!-- ADD HEADER & REQUEST db_card-->
     <?php include 'header.php';?>
     <?php include '../models/db_card.php';?>
 
@@ -11,6 +14,7 @@
         <h2>My Projects</h2>
 
         <article class="row project">
+            <!-- loop for show data in project table-->
             <?php while ($donnees = $reponse->fetch()) { ?>
             <div class="card project" style="width: 20rem;">
                 <div class="card-block">
@@ -29,14 +33,15 @@
 
                 </div>
             </div>
+            <!-- END LOOP -->
             <?php }
-            
+            /* Close request*/
             $reponse->closeCursor(); 
             ?>
             <a href="add_project.php" class="btn btn-success add-project">Add Project</a>
         </article>
     </main>
-
+    <!-- ADD FOOTER & SCRIPT -->
     <?php include 'footer.php';?>
     <?php include 'script.php';?>
 </body>
