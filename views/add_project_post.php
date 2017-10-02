@@ -1,5 +1,5 @@
 <?php 
-    include 'add_project.php';
+    include '../models/connection_bdd.php';
     if(isset($_POST['name_project']) AND isset($_POST['deadline']) AND isset($_POST['descriptions']))
     {
         $requete = $bdd-> prepare("INSERT INTO projects(name_project  , descriptions, deadline) VALUES(? , ?, ?)");

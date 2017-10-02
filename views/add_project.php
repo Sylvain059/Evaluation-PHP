@@ -1,4 +1,3 @@
-<?php include'../models/connection_bdd.php';?>
 <!DOCTYPE html>
 <html>
 <?php include 'head.php';?>
@@ -34,7 +33,7 @@
                             <label for="deadline">Deadline : </label>
                         </td>
                         <td>
-                            <input class='form-control' type="date" id="deadline" name="deadline">
+                            <input class='form-control' type="date" id="deadline" name="deadline" placeholder="yyyy/mm/dd">
                         </td>
                     </tr>
                     <tr>

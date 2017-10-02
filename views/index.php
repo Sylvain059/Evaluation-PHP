@@ -1,5 +1,3 @@
-<!-- ADD DATABASE CONNECT -->
-<?php include'../models/connection_bdd.php';?>
 <!DOCTYPE html>
 <html lang="fr">
 <!-- ADD HEAD -->
@@ -8,7 +6,7 @@
 <body>
     <!-- ADD HEADER & REQUEST db_card-->
     <?php include 'header.php';?>
-    <?php include '../models/db_card.php';?>
+
 
     <main class="container">
         <h2>My Projects</h2>
