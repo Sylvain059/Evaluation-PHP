@@ -1,5 +1,3 @@
-<!-- ADD DATABASE CONNECT -->
-<?php include '../models/connection_bdd.php'; ?>
 <!DOCTYPE html>
 <html>
 <!-- ADD HEAD -->
@@ -9,20 +7,9 @@
     <!-- ADD HEADER -->
     <?php include 'header.php';?>
 
-    <!-- ADD REQUEST -->
-    <?php include '../models/db_card.php';?>
-    <?php include '../models/db_tasks.php';?>
-    <?php include '../models/table_join.php';?>
-
-
     <main class="container jumbotron">
 
         <?php
-        
-    $project = $_GET['project'];
-    $reponse = $bdd->prepare('SELECT * FROM projects WHERE id = ? ');
-    $reponse->execute(array($project));
-        
     while ($donnees = $reponse->fetch()) { 
     ?>
 
@@ -30,9 +17,15 @@
                 <h2>
                     <?php echo $donnees['name_project'];?>
                 </h2>
+                <p class='container'>
+                    <?php echo $donnees['descriptions'];?>
+                </p>
+                <p class>
+                    <?php echo $donnees['deadline'];?>
+                </p>
             </article>
             <?php } ?>
-
+            <h3>Task : </h3>
             <?php 
         
         ?>
