@@ -24,7 +24,7 @@
                     <p class="card-text">
                         <?php echo $donnees['deadline'] ?>
                     </p>
-                    <a href="#" class="btn btn-primary button">See More</a>
+                    <a href="project.php" class="btn btn-primary button">See More</a>
                     <a href="#" class="btn btn-danger button">Delete Project</a>
 
                 </div>
