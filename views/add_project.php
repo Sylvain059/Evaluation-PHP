@@ -10,7 +10,7 @@
     <main class='container'>
         <article class="jumbotron">
             <h2>Add Project</h2>
-            <form method="post" action="" class='form-group'>
+            <form method="post" action="add_project_post.php" class='form-group'>
                 <table>
                     <tr>
                         <td>
@@ -45,13 +45,6 @@
                         </td>
                     </tr>
                 </table>
-                <?php 
-            if(isset($_POST['name_project']) AND isset($_POST['deadline']) AND isset($_POST['descriptions']))
-            {
-                $requete = $bdd-> prepare("INSERT INTO projects(name_project  , descriptions, deadline) VALUES(? , ?, ?)");
-                $requete->execute(array($_POST['name_project'] , $_POST['descriptions'] , $_POST['deadline']));
-            }
-            ?>
             </form>
         </article>
     </main>
