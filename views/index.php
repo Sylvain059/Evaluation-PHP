@@ -4,7 +4,6 @@
 <?php include 'head.php';?>
 
 <body>
-    <!-- ADD HEADER & REQUEST db_card-->
     <?php include 'header.php';?>
 
 
@@ -35,8 +34,8 @@
             /* Close request*/
             $reponse->closeCursor(); 
             ?>
-            <a href="add_project.php" class="btn btn-success add-project">Add Project</a>
         </article>
+        <a href="add_project.php" class="btn btn-success add-project">Add Project</a>
     </main>
     <!-- ADD FOOTER & SCRIPT -->
     <?php include 'footer.php';?>
