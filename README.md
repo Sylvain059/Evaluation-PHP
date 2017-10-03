@@ -1,9 +1,9 @@
 **EVALUATION PHP/MYSQL**
 
-L'évaluation de la semaine consiste à réaliser un site demander par un client travaillant pour une entreprise de batiments. Le projet demandé était la réalisation d'une "to do list". Certain critère était prioritaire.
+The evaluation of the week consists of making a site ask by a client working for a building company. The project requested was the realization of a "to do list". Certain criteria were given priority.
 
- *   Possibilité de creer des projets
- *  Les afficher sur la page d'accueil
- *   Créer des sous étapes et les afficher dans la page de leur projets respectifs
- *  Ajouter des tâches
- *   Supprimer comme on le souhaite un projet ou une tache.
+  * Ability to create projects
+  * Display them on the homepage
+  * Create sub-steps and display them in the page of their respective projects
+  * Add Tasks
+  * Delete a project or task as desired.
