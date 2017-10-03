@@ -7,5 +7,5 @@ include '../models/add_project_post.php';
 
 
 //view of the view
-include '../views/add_project_post.php';
+//include '../views/add_project_post.php';
 ?>
