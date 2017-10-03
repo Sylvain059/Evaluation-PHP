@@ -1,25 +1,79 @@
-html, body{
-	font-family: 'Noto Sans', sans-serif;
-	margin: 0;
-	padding: 0;
-}
-.logo{
-	width: 100px;
-}
-
-h1{
-	color: #fff;
+html,
+body {
+    background-color: gainsboro;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    /*RESET MARGIN & PADDING*/
+    padding: 0;
+    text-align: center;
 }
 
-h1:hover{
-	text-decoration: none;
+header {
+    background-color: #000;
+    color: #fff;
 }
 
-footer{
-	color: #fff;
-	height: 30px;
+.logo {
+    height: 100px;
+    width: 100px;
 }
 
-footer p{
-	text-align: center;
+main {
+    margin: 25px 0;
+}
+
+/*==================================================================================================
+STYLE FOR INDEX
+====================================================================================================
+*/
+
+.project {
+    margin: 15px;
+    padding: 5px;
+}
+
+.button {
+    margin-bottom: 20px;
+}
+
+.add-project {
+    margin: auto;
+}
+
+/*==================================================================================================
+STYLE FOR FORM
+====================================================================================================
+*/
+
+table {
+    margin: auto;
+    text-align: left;
+}
+
+tr,
+td {
+    padding: 10px;
+}
+
+/* ===================================================================================================
+STYLE FOR FOOTER 
+===================================================================================================
+*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer .copyright {
+    font-size: 10px;
+    margin: auto;
+}
+
+article,
+article h2,
+article p {
+    margin-bottom: 50px;
 }
